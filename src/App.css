@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+.calc {
+  background-color: #1c93ee;
+  width: 385px;
+  padding: 30px;
+  border-radius: 6px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calc-display-input {
+  width: 360px;
+  height: 60px;
+  margin: 20px 0;
+  border-radius: 6px;
+  background-color: #1d1d1d;
+  color: #fff;
+  text-align: right;
+  font-size: 35px;
+  padding: 10px;
+}
+.calc_button-row td {
+  margin: 0 auto;
+  padding: 5px;
+}
+.btn {
+  width: 85px;
+  height: 60px;
+  background-color: #f4f4f4;
+  font-size: 27px;
+  color: #666666;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+.btn-hover-red:hover {
+  background-color: #d83e33;
+  color: #f2f2f2;
+}
+.btn-hover-orange:hover {
+  background-color: #ff6a00;
+  color: #f2f2f2;
+}
+.btn-hover-green:hover {
+  background-color: green;
+  color: #f2f2f2;
+}
+.btn:active {
+  transform: translateY(-1px);
+}
+.btn-long {
+  width: 280px;
+}
+input,
+button {
+  padding: 5px 15px;
+  margin: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+}
+button {
+  margin-left: 0;
+  padding: 15px 24px;
 }
